@@ -1,0 +1,31 @@
+Installation process for postgres
+
+Step 1 – Enable Apt Repository:
+    wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+
+    sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+
+Step 2 – Install PostgreSQL on Debian 9:
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+
+Step 3 – Connect to PostgreSQL
+sudo su - postgres
+psql
+
+
+
+CHECK LOGIN INFO
+postgres-# \conninfo
+
+
+DISCONNECT
+postgres-# \q
+
+
+
+
+
+
+                Install pgAdmin4 on Debian
+sudo apt-get install pgadmin4 pgadmin4-apache2
